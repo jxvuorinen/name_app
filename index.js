@@ -3,7 +3,8 @@ const app = express()
 const cors = require('cors')
 app.use(cors())
 app.use(express.static('build'))
-const names = require('./names.json');
+
+const names = require('./names.json')
 
 app.get('/', (req, res) => {
     res.send('<h1>Welcome to Solita name-app</h1>')
